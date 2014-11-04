@@ -51,9 +51,10 @@ public class MenuActivity extends FragmentActivity {
         //实例化TabHost对象，得到TabHost
         mTabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
-
+        mTabHost.getTabWidget().setDividerDrawable(R.color.white);//去除分割线
         //得到fragment的个数
         int count = fragmentArray.length;
+
 
         for(int i = 0; i < count; i++){
             //为每一个Tab按钮设置图标、文字和内容

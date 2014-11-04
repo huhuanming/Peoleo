@@ -9,31 +9,31 @@
         android:layout_width="fill_parent"
         android:layout_height="0dip"
         android:layout_weight="1" />
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white"
         android:orientation="vertical"
         >
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="1dp"
-            android:background="#A8A8A8"
-            />
-
         <android.support.v4.app.FragmentTabHost
             android:id="@android:id/tabhost"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:background="@color/white">
 
             <FrameLayout
+                android:layout_gravity="center"
                 android:id="@android:id/tabcontent"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="0" />
         </android.support.v4.app.FragmentTabHost>
-        </LinearLayout>
-
-
-
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#A8A8A8"
+            />
+    </RelativeLayout>
 </LinearLayout>
