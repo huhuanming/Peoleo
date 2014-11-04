@@ -12,11 +12,11 @@ import com.peoleo.main.R;
 /**
  * Created by hu on 14-11-4.
  */
-public class Fragment1 extends Fragment {
+public class HomeFragment extends Fragment {
     private View parentView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        parentView = inflater.inflate(R.layout.fragment1,container,false);
+        parentView = inflater.inflate(R.layout.fragment_home,container,false);
         Toast.makeText(getActivity(),"dsd",Toast.LENGTH_SHORT).show();
         return parentView;
     }

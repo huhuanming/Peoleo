@@ -9,11 +9,11 @@ import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import com.peoleo.main.Fragment.Fragment1;
-import com.peoleo.main.Fragment.Fragment2;
-import com.peoleo.main.Fragment.Fragment3;
-import com.peoleo.main.Fragment.Fragment4;
-import com.peoleo.main.Fragment.Fragment5;
+import com.peoleo.main.Fragment.CartFragment;
+import com.peoleo.main.Fragment.ClassifyFragment;
+import com.peoleo.main.Fragment.CollectFragment;
+import com.peoleo.main.Fragment.HomeFragment;
+import com.peoleo.main.Fragment.UserFragment;
 import com.peoleo.main.R;
 
 public class MenuActivity extends FragmentActivity {
@@ -24,7 +24,7 @@ public class MenuActivity extends FragmentActivity {
     private LayoutInflater layoutInflater;
 
     //定义数组来存放Fragment界面
-    private Class fragmentArray[] = {Fragment1.class,Fragment2.class,Fragment3.class,Fragment4.class,Fragment5.class};
+    private Class fragmentArray[] = {HomeFragment.class,ClassifyFragment.class,CollectFragment.class,CartFragment.class,UserFragment.class};
 
     //定义数组来存放按钮图片
     private int mImageViewArray[] = {R.drawable.menu_home_select_style,

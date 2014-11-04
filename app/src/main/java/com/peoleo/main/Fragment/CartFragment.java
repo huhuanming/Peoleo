@@ -5,5 +5,5 @@ import android.support.v4.app.Fragment;
 /**
  * Created by hu on 14-11-4.
  */
-public class Fragment5 extends Fragment {
+public class CartFragment extends Fragment {
 }
