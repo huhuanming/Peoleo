@@ -22,14 +22,6 @@ public class Request{
 
     final static String packageName = "com.peoleo.main.Model.";
 
-    public String path;
-    public String action;
-
-    public Request(String path, String action){
-        this.path = path;
-        this.action = action;
-    }
-
     public RestAdapter adapter(){
         return new RestAdapter.Builder()
                 .setEndpoint("http://peoleo.sohuapps.com/api")

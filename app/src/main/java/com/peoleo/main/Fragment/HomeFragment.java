@@ -27,7 +27,7 @@ public class HomeFragment extends Fragment {
         parentView = inflater.inflate(R.layout.fragment_home,container,false);
         //移除数据库文件
         Realm.deleteRealmFile(getActivity());
-        new Request("a","a").adapter().create(User.Action.class).login("Ping","GetPing")
+        new Request().adapter().create(User.Action.class).login("Ping","GetPing")
                 .observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<JsonElement>() {
             @Override
             public void onCompleted() {
